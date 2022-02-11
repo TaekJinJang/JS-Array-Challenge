@@ -1,6 +1,6 @@
 // write your codes
 function solution(inputArray) {
-  return inputArray.filter((item) => item >= 40);
+  return inputArray.filter((item) => !isNaN(item) && typeof item === "number");
 }
 
 exports.solution = solution;
